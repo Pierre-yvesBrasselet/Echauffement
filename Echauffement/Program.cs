@@ -7,8 +7,9 @@ class Program
         /*
          * Consigne générale : faites un commit entre chaque étape !
          */
-        
+
         // Etape 1 : présentez-vous en écrivant votre prénom et votre jeu préféré
+        Console.WriteLine("Mon prénom est Pierre-Yves et mon jeu préféré est persona 5");
         
         // Etape 2 : demandez à l'utilisateur son prénom et son âge
         

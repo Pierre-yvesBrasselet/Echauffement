@@ -36,12 +36,12 @@ class Program
         int weapon3 = 30;
         int weapon4 = 50;
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
-        Console.WriteLine("Choisis une de ces armes grâce a son numéro");
+        Console.WriteLine("Choisis une de ces armes grâce a son numéro !");
         int weaponChoice = Convert.ToInt32(Console.ReadLine());
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
-        if (weaponChoice == 1) ;
+        if (weaponChoice == 1)
         {
-            if (money >= weapon1) ;
+            if (money >= weapon1)
             {
                 Console.WriteLine("bien joué tu as acquéri une jolie dague pour la modique somme de 5 euros !");
             }
@@ -50,9 +50,9 @@ class Program
                 Console.WriteLine("tu es trop pauvre looser !");
             }
         }
-        if (weaponChoice == 2) ;
+        if (weaponChoice == 2)
         {
-            if (money >= weapon2) ;
+            if (money >= weapon2)
             {
                 Console.WriteLine("bien joué tu as acquéri un joli arc pour la modique somme de 15 euros !");
             }
@@ -61,9 +61,9 @@ class Program
                 Console.WriteLine("tu es trop pauvre looser !");
             }
         }
-        if (weaponChoice == 3) ;
+        if (weaponChoice == 3)
         {
-            if (money >= weapon3) ;
+            if (money >= weapon3)
             {
                 Console.WriteLine("bien joué tu as acquéri une jolie hache pour la modique somme de 30 euros !");
             }
@@ -72,9 +72,9 @@ class Program
                 Console.WriteLine("tu es trop pauvre looser !");
             }
         }
-        if (weaponChoice == 4) ;
+        if (weaponChoice == 4)
         {
-            if (money >= weapon4) ;
+            if (money >= weapon4)
             {
                 Console.WriteLine("bien joué tu as acquéri une jolie épée longue pour la modique somme de 50 euros !");
             }
@@ -83,7 +83,7 @@ class Program
                 Console.WriteLine("tu es trop pauvre looser !");
             }
         }
-        if (weaponChoice == 0 || weaponChoice > 4) ;
+        if (weaponChoice == 0 || weaponChoice > 4)
         {
             Console.WriteLine("Il fallait choisir une des 4 armes looser...");
             Console.WriteLine("GAME OVER !");

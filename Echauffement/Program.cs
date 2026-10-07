@@ -39,54 +39,66 @@ class Program
         Console.WriteLine("Choisis une de ces armes grâce a son numéro !");
         int weaponChoice = Convert.ToInt32(Console.ReadLine());
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
-        if (weaponChoice == 1)
+        if (age >= 18)
         {
-            if (money >= weapon1)
+            if (weaponChoice == 1)
             {
-                Console.WriteLine("bien joué tu as acquéri une jolie dague pour la modique somme de 5 euros !");
+                if (money >= weapon1)
+                {
+                    Console.WriteLine("bien joué " + name + "  tu as acquéri une jolie dague pour la modique somme de 5 euros !");
+                    money -= weapon1;
+                }
+                else
+                {
+                    Console.WriteLine("tu es trop pauvre looser !");
+                }
             }
-            else
+            if (weaponChoice == 2)
             {
-                Console.WriteLine("tu es trop pauvre looser !");
+                if (money >= weapon2)
+                {
+                    Console.WriteLine("bien joué " + name + "  tu as acquéri un joli arc pour la modique somme de 15 euros !");
+                    money -= weapon2;
+                }
+                else
+                {
+                    Console.WriteLine("tu es trop pauvre looser !");
+                }
             }
+            if (weaponChoice == 3)
+            {
+                if (money >= weapon3)
+                {
+                    Console.WriteLine("bien joué " + name + "  tu as acquéri une jolie hache pour la modique somme de 30 euros !");
+                    money -= weapon3;
+                }
+                else
+                {
+                    Console.WriteLine("tu es trop pauvre looser !");
+                }
+            }
+            if (weaponChoice == 4)
+            {
+                if (money >= weapon4)
+                {
+                    Console.WriteLine("bien joué " + name + " tu as acquéri une jolie épée longue pour la modique somme de 50 euros !");
+                    money -= weapon4;
+                }
+                else
+                {
+                    Console.WriteLine("tu es trop pauvre looser !");
+                }
+            }
+            if (weaponChoice == 0 || weaponChoice > 4)
+            {
+                Console.WriteLine("Il fallait choisir une des 4 armes looser...");
+                Console.WriteLine("GAME OVER !");
+            }
+            Console.WriteLine("tu as maintenant " + money + " euros, merci pour ton achat !");
         }
-        if (weaponChoice == 2)
+        else
         {
-            if (money >= weapon2)
-            {
-                Console.WriteLine("bien joué tu as acquéri un joli arc pour la modique somme de 15 euros !");
-            }
-            else
-            {
-                Console.WriteLine("tu es trop pauvre looser !");
-            }
-        }
-        if (weaponChoice == 3)
-        {
-            if (money >= weapon3)
-            {
-                Console.WriteLine("bien joué tu as acquéri une jolie hache pour la modique somme de 30 euros !");
-            }
-            else
-            {
-                Console.WriteLine("tu es trop pauvre looser !");
-            }
-        }
-        if (weaponChoice == 4)
-        {
-            if (money >= weapon4)
-            {
-                Console.WriteLine("bien joué tu as acquéri une jolie épée longue pour la modique somme de 50 euros !");
-            }
-            else
-            {
-                Console.WriteLine("tu es trop pauvre looser !");
-            }
-        }
-        if (weaponChoice == 0 || weaponChoice > 4)
-        {
-            Console.WriteLine("Il fallait choisir une des 4 armes looser...");
-            Console.WriteLine("GAME OVER !");
+            Console.WriteLine("tu es trop jeune retourne jouer avec ton hochet...");
         }
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
         // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 

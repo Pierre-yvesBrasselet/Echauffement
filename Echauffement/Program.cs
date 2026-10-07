@@ -47,6 +47,7 @@ class Program
                 {
                     Console.WriteLine("bien joué " + name + "  tu as acquéri une jolie dague pour la modique somme de 5 euros !");
                     money -= weapon1;
+                    Console.WriteLine("tu as maintenant " + money + " euros, merci pour ton achat !");
                 }
                 else
                 {
@@ -59,6 +60,7 @@ class Program
                 {
                     Console.WriteLine("bien joué " + name + "  tu as acquéri un joli arc pour la modique somme de 15 euros !");
                     money -= weapon2;
+                    Console.WriteLine("tu as maintenant " + money + " euros, merci pour ton achat !");
                 }
                 else
                 {
@@ -71,6 +73,7 @@ class Program
                 {
                     Console.WriteLine("bien joué " + name + "  tu as acquéri une jolie hache pour la modique somme de 30 euros !");
                     money -= weapon3;
+                    Console.WriteLine("tu as maintenant " + money + " euros, merci pour ton achat !");
                 }
                 else
                 {
@@ -83,6 +86,7 @@ class Program
                 {
                     Console.WriteLine("bien joué " + name + " tu as acquéri une jolie épée longue pour la modique somme de 50 euros !");
                     money -= weapon4;
+                    Console.WriteLine("tu as maintenant " + money + " euros, merci pour ton achat !");
                 }
                 else
                 {
@@ -94,7 +98,6 @@ class Program
                 Console.WriteLine("Il fallait choisir une des 4 armes looser...");
                 Console.WriteLine("GAME OVER !");
             }
-            Console.WriteLine("tu as maintenant " + money + " euros, merci pour ton achat !");
         }
         else
         {

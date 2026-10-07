@@ -32,7 +32,8 @@ class Program
         Console.WriteLine("Voici 4 armes :");
         Console.WriteLine("1: Dague 5 euros / 2: Arc 15 euros / 3: Hache 30 euros / 4: Épée Longue 50 euros");
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
-
+        Console.WriteLine("Choisis une de ces armes grâce a son numéro");
+        int weaponChoice = Convert.ToInt32(Console.ReadLine());
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
 
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
